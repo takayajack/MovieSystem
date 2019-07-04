@@ -1,1 +1,8 @@
-﻿
+﻿table{
+ border-collapse: collapse;
+ border-spacing: 5px;
+}
+
+td{
+ border: 1px gray solid;
+}
