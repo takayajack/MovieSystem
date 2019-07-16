@@ -1,10 +1,10 @@
-package dao;
+package movie.model.dao;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import diarysystem.Beans.ReservationBeans;
+import movie.beans.ReservationBeans;
 
 /**
  * DBより予約情報を取得する。
@@ -14,7 +14,7 @@ import diarysystem.Beans.ReservationBeans;
  *
  *
  */
-public class ReservationDao extends Daobase {
+public class ReservationDao extends DaoBase {
 
 		public List<ReservationBeans> getReservation(){
 
