@@ -1,8 +1,33 @@
-﻿table{
- border-collapse: collapse;
- border-spacing: 5px;
+﻿#screen,
+#screen span{
+	height: 50px;
+	margin: 0 auto;
 }
 
-td{
- border: 1px gray solid;
+#screen {
+	width: 70%;
+	background-image: url("../img/seat_screen.png");
+	background-repeat: no-repeat;
 }
+
+
+.invisibleFrame {
+  visibility:hidden;
+
+}
+
+.nondisplayFrame {
+  display:none;
+}
+
+.target-table {
+	width: 441px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+table{
+  height: 10rem;
+  text-align: center;
+}
+*/
