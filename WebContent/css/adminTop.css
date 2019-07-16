@@ -1,0 +1,18 @@
+@charset "UTF-8";
+table,tr,th,td{
+	border: 1px solid #ffffff;
+}
+.hidden{
+	display: none;
+}
+#movieAdd{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#movieAdd img{
+	z-index: 999;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
