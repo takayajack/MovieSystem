@@ -1,0 +1,12 @@
+@charset "UTF-8";
+img{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.hidden{
+	display: none;
+}
+table,tr{
+	border:solid 1px #000;
+}
