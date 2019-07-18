@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<link rel="stylesheet" type="text/css" href="退会確認.css">
+<link rel="stylesheet" type="text/css" href="userDiscribeConf.css">
 
 
 <div class="Taikai">

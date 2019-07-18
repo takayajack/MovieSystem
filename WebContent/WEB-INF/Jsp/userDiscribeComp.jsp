@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<link rel="stylesheet" type="text/css" href="退会完了.css">
+<link rel="stylesheet" type="text/css" href="userDiscribeComp.css">
 
 <div class ="Comp">
 <h1>退会完了しました</h1>

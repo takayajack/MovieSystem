@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<link rel="stylesheet" type="text/css" href="会員情報変更.css">
+<link rel="stylesheet" type="text/css" href="userInfoChange.css">
 <script type="text/javascript">
 <!-- 
 

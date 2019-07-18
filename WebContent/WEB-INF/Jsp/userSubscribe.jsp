@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<link rel="stylesheet" type="text/css" href="会員登録.css">
+<link rel="stylesheet" type="text/css" href="userSubscribe.css">
 <div><h1>会員　登録</h1></div>
 
 <form action=""  onsubmit="return false;">
