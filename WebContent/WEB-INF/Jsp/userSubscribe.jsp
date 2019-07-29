@@ -22,7 +22,7 @@
 	</div>
 	<div>
 		<label>パスワードの再入力</label>
-		<input type="password" name="conf" oninput="CheckPassword(this)" required>
+		<input type="password" name="passConf" oninput="CheckPassword(this)" required>
 		
 	</div>
 	<div>
