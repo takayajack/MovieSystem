@@ -8,6 +8,24 @@
 </head>
 
 <body>
+<% String errflg1 = request.getParameter("errflg1"); %>
+<% String errflg2 = request.getParameter("errflg2"); %>
+<% String errflg3 = request.getParameter("errflg3"); %>
+<% String errflg4 = request.getParameter("errflg4"); %>
+
+<%if(errflg1 != null){ %>
+	メールアドレスを正しく入力してください。
+	
+<%}else if(errflg2 != null){ %>
+	パスワードを正しく入力してください。
+	
+<%}else if(errflg3 != null){ %>
+	上記と同じパスワードを正しく入力してください。
+	
+<%}else if(errflg4 != null){ %>
+	入力されたパスワードと違います。
+<%} %>
+
 <link rel="stylesheet" type="text/css" href="userSubscribe.css">
 <div><h1>会員　登録</h1></div>
 
@@ -29,19 +47,6 @@
 	<input type="button" name="send" value="認証メールを送信">
 	</div>
 </form>
-<script>
-	function CheckPassword(confirm){
-		// 入力値取得
-		var input1 = pass.value;
-		var input2 = conf.value;
-		// パスワード比較
-		if(input1 != input2){
-			confirm.setCustomValidity("入力値が一致しません。");
-		}else{
-			confirm.setCustomValidity('');
-		}
-	}
-</script>
 </body>
 
 </html>

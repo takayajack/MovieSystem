@@ -18,7 +18,7 @@ public class UserDao extends DaoBase{
 		ResultSet rs = null;
 		
 			try {
-				stmt = con.prepareStatement("SELECT ");
+				stmt = con.prepareStatement("SELECT user_address, user_password FROM user WHERE user_address = ? AND user_password = ?");
 				
 	
 				stmt.setString(1, id);
@@ -56,7 +56,7 @@ public class UserDao extends DaoBase{
 		PreparedStatement stmt = null;
 		
 		try {
-			stmt = con.prepareStatement("INSERT INTO ");
+			stmt = con.prepareStatement("INSERT INTO user (user_address, user_password,register_date) VALUE (?,?,now()) ");
 			
 			stmt.setString(1, mail);
 			stmt.setString(2, password);
