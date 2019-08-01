@@ -29,7 +29,7 @@
 <link rel="stylesheet" type="text/css" href="userSubscribe.css">
 <div><h1>会員　登録</h1></div>
 
-<form action=""  onsubmit="return false;">
+<form action = "Register">
 	<div>
 		<label>メールアドレス</label>
 		<input type="email" name="mail" required>
