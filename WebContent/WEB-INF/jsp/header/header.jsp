@@ -26,7 +26,7 @@
 <div class="search">
 <h1><a href="#"><img src="img/logo_01.png"></a></h1>
 
-<form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_blank">
+<form method="get" action="" target="_blank">
 
 <input class="text_box" type="text" name="sitem" placeholder="映画名などで検索">
 
