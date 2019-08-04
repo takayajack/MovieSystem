@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <html>
 
 <head>
@@ -9,7 +11,7 @@
 <body>
 <link rel="stylesheet" type="text/css" href="userInfoChange.css">
 <script type="text/javascript">
-<!-- 
+<!--
 
 function check(){
 
@@ -56,7 +58,7 @@ function check(){
 <form method="POST" action="登録完了（仮）.html" name="form1" onSubmit="return check()">
 
 	<div>メールアドレス</div>
-		
+
 		<div><input type="text" name="mail"></div>
 		<div><input type="button" name="NameChange" value="変更"></div>
 		<div>パスワード</div>

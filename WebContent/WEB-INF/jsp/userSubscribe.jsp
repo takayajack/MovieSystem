@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <html>
 
 <head>
@@ -15,19 +17,19 @@
 
 <%if(errflg1 != null){ %>
 	メールアドレスを正しく入力してください。
-	
+
 <%}else if(errflg2 != null){ %>
 	パスワードを正しく入力してください。
-	
+
 <%}else if(errflg3 != null){ %>
 	上記と同じパスワードを正しく入力してください。
-	
+
 <%}else if(errflg4 != null){ %>
 	入力されたパスワードと違います。
 <%} %>
 
 <link rel="stylesheet" type="text/css" href="userSubscribe.css">
-<div><h1>会員　登録</h1></div>
+<div><h1>会員 登録</h1></div>
 
 <form action = "Register">
 	<div>
@@ -41,7 +43,7 @@
 	<div>
 		<label>パスワードの再入力</label>
 		<input type="password" name="passConf" oninput="CheckPassword(this)" required>
-		
+
 	</div>
 	<div>
 	<input type="button" name="send" value="認証メールを送信">

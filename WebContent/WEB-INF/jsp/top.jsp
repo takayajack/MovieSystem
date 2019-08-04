@@ -1,6 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <html lang="ja" dir="ltr">
   <head>
+  <jsp:include page="./header/header.jsp"/>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,7 +44,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="button-panel">
       	<input type="submit" class="button" value="映画一覧">
       	<input type="submit" class="button" value="映画スケジュール">
