@@ -14,16 +14,9 @@ import movie.beans.UserInfoBeans;
 
 @WebServlet("/Register")
 public class ResistrationServlet extends HttpServlet {
-<<<<<<< Updated upstream
-	
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-=======
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-													throws ServletException, IOException {
-
->>>>>>> Stashed changes
 		String mail = request.getParameter("mail");
 		String pass = request.getParameter("pass");
 		String passConf = request.getParameter("passConf");
@@ -61,13 +54,8 @@ public class ResistrationServlet extends HttpServlet {
 		}
 
 		session.setAttribute("userInfo",userInfo);
-<<<<<<< Updated upstream
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/top.jsp");
-=======
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/userInfoChange.jsp");
->>>>>>> Stashed changes
 		dispatcher.forward(request, response);
 	}
 
