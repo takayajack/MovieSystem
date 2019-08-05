@@ -1,12 +1,27 @@
-﻿<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="java.util.*" %>
+<!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title></title>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/top.css">
   </head>
   <body>
+	<jsp:include page="header/header.jsp"/>
+
+<!-- <header> -->
+<!-- 	<ul> -->
+<!-- 		<li class="header-left"><a href="Logout"><input type="button"value="ログアウト"></a> -->
+<!-- 	</ul> -->
+<!-- </header> -->
+  <%
+	List<Map<String,String>> list = (List<Map<String,String>>)request.getAttribute("list");
+%>
+
       <div id="example-4" class="carousel slide" data-ride="carousel" style="width:900px; margin-right: auto; margin-left: auto">
 
         <ol class="carousel-indicators">
@@ -15,20 +30,17 @@
           <li data-target="#example-4" data-slide-to="2"></li>
           <li data-target="#example-4" data-slide-to="3"></li>
         </ol>
+<%
 
+	for(Map map : list){
+%>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/green1.jpg" alt="First slide">
+            <img src=<%=map.get("thumbnail") %> alt="First slide">
           </div>
-          <div class="carousel-item">
-            <img src="img/pink1.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img src="img/red1.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img src="img/yellow1.jpg" alt="forth slide">
-          </div>
+
+          <%
+	}%>
 
           <a class="carousel-control-prev" href="#example-4" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -41,9 +53,10 @@
           </a>
         </div>
       </div>
-      
-      <div class="button-panel">
+   <div class="button-panel">
+      <form action="list" method = "GET">
       	<input type="submit" class="button" value="映画一覧">
+      	</form>
       	<input type="submit" class="button" value="映画スケジュール">
       </div>
 

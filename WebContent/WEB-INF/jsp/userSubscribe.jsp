@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -27,7 +29,7 @@
 <%} %>
 
 <link rel="stylesheet" type="text/css" href="userSubscribe.css">
-<div><h1>会員　登録</h1></div>
+<div><h1>会員 登録</h1></div>
 
 <form action = "Register">
 	<div>

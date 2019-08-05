@@ -9,14 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/adminTop")
-public class AdminTopServlet extends HttpServlet {
+@WebServlet("/login")
+public class LoginStartServlet extends HttpServlet {
+
 
 	@Override
-	protected void doGet(HttpServletRequest request,HttpServletResponse response)
-												throws ServletException,IOException{
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/adminTop.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/login.jsp");
 		dispatcher.forward(request, response);
 	}
+
+
 }
+
